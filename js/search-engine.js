@@ -7,7 +7,7 @@ let searchEngine = (function(){
 
 		searchRecipe = document.querySelector(stringsDOM.searchRecipe);
 		bodyRecipe = document.querySelectorAll(stringsDOM.bodyRecipe); 
-		recipeTitle = document.querySelectorAll(stringsDOM.recipeTitle);
+		recipeTitle = document.querySelectorAll(stringsDOM.recipeTitle.toLowerCase());
 	
 		for(let i = 0; i<bodyRecipe.length; i++) {
 			if(recipeTitle[i].innerHTML.includes(searchRecipe.value.toLowerCase())) { 
