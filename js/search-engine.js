@@ -10,7 +10,7 @@ let searchEngine = (function(){
 		recipeTitle = document.querySelectorAll(stringsDOM.recipeTitle);
 	
 		for(let i = 0; i<bodyRecipe.length; i++) {
-			if(recipeTitle[i].innerHTML.includes(searchRecipe.value)) { 
+			if(recipeTitle[i].innerHTML.includes(searchRecipe.value.toLowerCase())) { 
 				bodyRecipe[i].style.display ='block';
 			} else {
 				bodyRecipe[i].style.display = 'none';
